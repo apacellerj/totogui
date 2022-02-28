@@ -20,6 +20,7 @@ namespace totogui
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            //10b
             if (textBox1.Text.Length == 14)
             {
                 checkBox1.Checked = false;
@@ -31,6 +32,25 @@ namespace totogui
             }
 
             checkBox1.Text = $"Nem megfelelő a karakterek szám ({textBox1.Text.Length})";
+
+            //10c
+            string hibásak = "";
+            foreach (var ch in textBox1.Text)
+            {
+                if (ch != '1' && ch != '2' && ch != 'X')
+                {
+                    hibásak += ch + ";";
+                }
+            }
+            checkBox2.Text = $"Helytelen karakter az eredményekben ({hibásak})";
+            if (hibásak.Length == 0)
+            {
+                checkBox2.Checked = false;
+            }
+            else
+            {
+                checkBox2.Checked = true;
+            }
         }
     }
 }

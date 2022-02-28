@@ -63,7 +63,7 @@ namespace totogui
             this.label1.Size = new System.Drawing.Size(178, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Kérem a forduló ereményeit [1, 2, X]:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            //this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -72,7 +72,7 @@ namespace totogui
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 3;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            //this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // checkBox1
             // 
@@ -83,7 +83,7 @@ namespace totogui
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Nem megfelelő a karakterek száma (14)";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            //this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -108,7 +108,7 @@ namespace totogui
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Totó eredmény ellenőrző";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            //this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
