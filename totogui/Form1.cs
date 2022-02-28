@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace totogui
 {
@@ -17,36 +18,19 @@ namespace totogui
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            if (textBox1.Text.Length == 14)
+            {
+                checkBox1.Checked = false;
+            }
 
+            else
+            {
+                checkBox1.Checked = true;
+            }
+
+            checkBox1.Text = $"Nem megfelelő a karakterek szám ({textBox1.Text.Length})";
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }
