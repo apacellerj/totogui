@@ -48,10 +48,12 @@ namespace totogui
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(28, 29);
+            this.textBox1.Location = new System.Drawing.Point(22, 29);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(199, 20);
             this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "12X12X12X12X12X12X";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -61,6 +63,7 @@ namespace totogui
             this.label1.Size = new System.Drawing.Size(178, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Kérem a forduló ereményeit [1, 2, X]:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
